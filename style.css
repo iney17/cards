@@ -1,0 +1,51 @@
+.product{
+    margin-top: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: auto;
+    color: #1D1D1D;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+
+}
+.card{
+    padding: 5px;
+    width: 310px;
+    height: 366px;
+}
+.image1{
+    width: 300px;
+    height: 250px;
+    background-image: url(img/image1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.image2{
+    width: 300px;
+    height: 250px;
+    background-image: url(img/image2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.image3{
+    width: 300px;
+    height: 250px;
+    background-image: url(img/image3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.textBox{
+    font-size: 16px;
+    line-height: 24px;
+}
+.textBox2{
+font-size: 14px;
+line-height: 21px;
+color: #626262;
+}
+.textBox3{
+font-size: 13px;
+line-height: 21px;
+}
