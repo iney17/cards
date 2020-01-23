@@ -1,6 +1,13 @@
-.product{
-    margin-top: 40px;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.product_row{
+    margin: 0px auto 0px auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content:center;
     align-items: center;
     overflow: auto;
@@ -8,44 +15,47 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-
+    width: 976px;
+    box-sizing: border-box;
 }
 .card{
-    padding: 5px;
-    width: 310px;
-    height: 366px;
+    display: block;
+    padding-bottom: 20px;
+    flex-basis: 33.33%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+.card-link{
+    display: block;
+    text-decoration: none;
+    color: #1d1d1d;
+    padding-bottom: 20px;
 }
-.image1{
-    width: 300px;
-    height: 250px;
-    background-image: url(img/image1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+.card-link:hover{
+    background-color: #DCDCDC;
+
 }
-.image2{
-    width: 300px;
-    height: 250px;
-    background-image: url(img/image2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+.card__image{
+        display: block;
+        width: 100%;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
 }
-.image3{
-    width: 300px;
-    height: 250px;
-    background-image: url(img/image3.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.textBox{
+.card__textBox{
     font-size: 16px;
     line-height: 24px;
 }
-.textBox2{
+.card__textBox2{
 font-size: 14px;
 line-height: 21px;
 color: #626262;
 }
-.textBox3{
+.card__textBox3{
 font-size: 13px;
 line-height: 21px;
 }
