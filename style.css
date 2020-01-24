@@ -3,7 +3,10 @@
 *::before {
   box-sizing: inherit;
 }
+
 .product_row{
+    width: 100%;
+    max-width: 976px;
     margin: 0px auto 0px auto;
     display: flex;
     flex-wrap: wrap;
@@ -14,16 +17,33 @@
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
-    width: 976px;
+
     box-sizing: border-box;
 }
 .card{
+    width: 100%;
     display: block;
     padding-bottom: 20px;
     flex-basis: 33.33%;
     padding-left: 8px;
     padding-right: 8px;
   }
+  @media screen and (max-width: 572px) {
+    .card{
+        display: block;
+        padding-bottom: 20px;
+        flex-basis: 100%;        
+        margin: auto;
+    }
+}
+@media (min-width: 573px) and (max-width: 762px) {
+    .card{
+        display: block;
+        padding-bottom: 20px;
+        flex-basis: 50%;
+        margin: auto;
+    }
+}
 .card-link{
     display: block;
     text-decoration: none;
