@@ -3,7 +3,21 @@
 *::before {
   box-sizing: inherit;
 }
-
+.main__title {
+        margin-bottom: 16px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+    }
+.col-12 {
+    width: 100%;
+    max-width: 976px;
+    margin: 0px auto 0px auto;
+    flex-basis: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+  
+}
 .product_row{
     width: 100%;
     max-width: 976px;
