@@ -141,8 +141,7 @@ img {
   max-width: 976px;
   padding-left: 10px;
   padding-bottom: 10px;
-  margin: 0px auto 20px auto;
-  max-width: 976px;
+  margin: 0px auto 55px auto;
   border-bottom: 2px solid #757575;
   opacity: 0.3;
   display: flex;
@@ -186,8 +185,18 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.header__delivery__location {
-  width: 292px;
+.mobile__delivery {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  max-width: 976px;
+  margin-bottom: 40px;
+}
+.to {
+  padding-left: 10px;
+}
+.header__delivery__location,
+.mobile__delivery__location {
   height: 40px;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
@@ -195,6 +204,13 @@ img {
   display: flex;
   align-items: center;
   padding: 5px;
+}
+.mobile__delivery__location {
+  margin-left: 20px;
+  width: max-content;
+}
+.header__delivery__location {
+  width: 292px;
 }
 @media (min-width: 702px) and (max-width: 991px) {
   .header__delivery__location {
@@ -207,9 +223,17 @@ img {
     margin-right: 30px;
   }
 }
+@media (min-width: 713px) {
+  .mobile__delivery {
+    display: none;
+  }
+}
 @media (max-width: 714px) {
   .header__delivery {
     display: none;
+  }
+  .searchform {
+    margin: 0px auto 24px auto !important;
   }
 }
 @media (max-width: 576px) {
@@ -231,34 +255,27 @@ img {
   align-items: center;
   justify-content: space-around;
 }
-.sign-in {
-  border: 1px solid #e0e0e0;
+.sign-in,
+.register {
   box-sizing: border-box;
   border-radius: 2px;
   width: 80px;
   height: 40px;
-  background-color: #fff;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 24px;
-  color: #1d1d1d;
   margin-right: 10px;
+}
+.sign-in {
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  color: #1d1d1d;
 }
 .register {
   border: 1px solid #262626;
   background: #262626;
-  border-radius: 2px;
-  box-sizing: border-box;
-  width: 80px;
-  height: 40px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 24px;
   color: #ffff;
-  margin-right: 10px;
   outline: none;
 }
