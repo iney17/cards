@@ -59,6 +59,11 @@ html {
     margin: auto;
   }
 }
+@media (max-width: 768px) {
+  .card__img__sale {
+    right: 0px !important;
+  }
+}
 .card-link {
   display: block;
   text-decoration: none;
