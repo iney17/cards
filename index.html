@@ -14,15 +14,59 @@
   <body>
     <div class="header">
       <div class="header-line">
-      <div class="header__logo">
-        <img class="logo_left_image" src="./img/uber.svg" alt="Uber" />
-        <img class="logo_right_image" src="./img/eats.svg" alt="Eats" />
+        <div class="header__logo">
+          <img class="logo_left_image" src="./img/uber.svg" alt="Uber" />
+          <img class="logo_right_image" src="./img/eats.svg" alt="Eats" />
+        </div>
+          <div class="header__delivery">
+          <select class="delivery_button">
+              <option value="ASAP">ASAP</option>
+          </select>
+          <span
+            style="display: flex;
+       align-items: center; padding:0 5px 0 5px"
+            >to</span
+          >
+          <div class="header__delivery__location">
+            <img class="location" src="./img/location.svg" alt="location" />
+            <input
+              type="text"
+              class="location-input"
+              placeholder="ul. Bolshaya Dmitrovka,22"
+            />
+          </div>
+        </div>
+        <div class="header__right">
+          <button name="button" class="sign-in">Sign In</button>
+          <button name="button" class="register">Register</button>
+
+          <div class="basket">
+            <button class="basket_but"><img alt="корзина покупок" src="./img/basket.svg" /></button>
+          </div>
+        </div>
       </div>
-      <div class="header__delivery">
-        <a class="delivery_button" href="#">ASAP</a>
-       <span style="display: flex;
-       align-items: center; padding:0 5px 0 5px">to</span> 
-        <div class="header__delivery__location">
+    </div>
+    <div class="searchform">
+      <form action="" method="post" class="search">
+        <button type="submit" name="" value="" class="search-submit"></button>
+        <input
+          type="search"
+          name=""
+          placeholder="Search for restaurant or cuisine"
+          class="input-search"
+        />
+      </form>
+    </div>
+    <div class="mobile__delivery">
+      <div class="mobile__delivery__block">
+        <p>When</p>
+        <select class="delivery_button">
+          <option value="ASAP">ASAP</option>
+      </select>
+      </div>
+      <div class="mobile__delivery__block">
+        <p style="padding-left: 15px;">To</p>
+        <div class="mobile__delivery__location">
           <img class="location" src="./img/location.svg" alt="location" />
           <input
             type="text"
@@ -31,35 +75,7 @@
           />
         </div>
       </div>
-        <div class="header__right">
-          <button name="button" class="sign-in">Sign In</button>
-          <button name="button" class="register">Register</button>
-        
-        <div class="basket">
-          <img alt="корзина покупок" src="./img/basket.svg">
-        </div></div>
-      </div>
     </div>
-    <div class="searchform">
-        <form action="" method="post" class="search">
-          <button
-              type="submit" name="" value="" class="search-submit"></button>
-              <input type="search" name="" placeholder="Search for restaurant or cuisine" class="input-search" />
-          
-        </form>
-      </div>
-       <div class="mobile__delivery">
-        <div class="mobile__delivery__block"><p>When</p>
-         <a class="delivery_button" href="#">ASAP</a></div>
-         <div class="mobile__delivery__block"><p style="padding-left: 15px;">To</p>
-         <div class="mobile__delivery__location">
-           <img class="location" src="./img/location.svg" alt="location" />
-           <input
-             type="text"
-             class="location-input"
-             placeholder="ul. Bolshaya Dmitrovka,22"
-           /></div>
-         </div></div>
     <div class="col-12">
       <h2 class="main__title">Restaurants</h2>
     </div>
@@ -281,5 +297,96 @@
         </a>
       </div>
     </div>
+
+    <footer>
+      <div class="col-12_footer">
+        <div class="footer__logo">
+          <img
+            class="logo_left_image"
+            src="./img/footerLogo.svg"
+            alt="UberEats"
+          />
+        </div>
+        <div class="footer_row">
+          <div class="card">
+            <div class="footer_lang">
+              <select name="select">
+                <option value="En">ENGLISH</option>
+              </select>
+            </div>
+            <div class="footer__hash">
+              <span style="color: #49a144;">#</span>
+              <span style="color: #fff;"> UberEats</span>
+            </div>
+            <div>
+              <a href="#"><img src="./img/facebook.svg"
+              /></a>
+              <a href="#" class="social"
+                ><img src="./img/twitter.svg"
+              /></a>
+              <a href="#"><img src="./img/instagram.svg"
+              /></a>
+            </div>
+          </div>
+          <div class="card footer__links">
+            <div>
+              <a href="#" class="footer_link">About UberEats</a>
+            </div>
+            <div>
+              <a href="#" class="footer_link">Become a Delivery Partner</a>
+            </div>
+            <div>
+              <a href="#" class="footer_link">Become a Restaurant Partner</a>
+            </div>
+          </div>
+          <div class="card footer__links">
+            <div>
+              <a href="#" class="footer_link">See all cities</a>
+            </div>
+            <div>
+              <a href="#" class="footer_link">Pricing</a>
+            </div>
+            <div>
+              <a href="#" class="footer_link">Help</a>
+            </div>
+            <div>
+              <a href="#" class="footer_link">FAQs</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_row"></div>
+          <div class="footer__apps">
+
+            <div>
+              <a href="#">
+                <img src="./img/AppStore.svg" alt="AppStore" />
+              </a>
+            </div>
+            <div class="footer__app">
+              <a href="#">
+                <img src="./img/GooglePlay.svg" alt="GooglePlay" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__terms">
+          <div class="card">
+            <span class="footer_link">© 2020 Uber Technologies Inc.</span>
+          </div>
+          <div class="card">
+            <a href="#" class="footer_link">Privacy</a>
+          </div>
+          <div class="card">
+            <a href="#" class="footer_link">Terms</a>
+          </div>
+        </div>
+      </div></div>
+      <a href="#" class="up">
+        <div>
+          <img src="./img/up.svg"/>
+        </div>
+      </a>
+    </footer>
+
   </body>
 </html>
