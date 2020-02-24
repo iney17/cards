@@ -303,7 +303,7 @@ footer {
   padding: 12px 0 12px 48px;
   background-color: #3b3b3b;
   color: #fff;
-  background-image: url(../img/world.svg), url(../img/arrow_lang.svg);
+  background-image: url(./img/world.svg), url(./img/arrow_lang.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: 15px, 90% center;
   border-radius: 2px;
